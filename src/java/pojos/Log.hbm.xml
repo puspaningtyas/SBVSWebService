@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 7, 2018 10:50:38 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojos.Log" table="log" catalog="sbvs" optimistic-lock="version">
+        <id name="time" type="timestamp">
+            <column name="time" length="19" />
+            <generator class="assigned" />
+        </id>
+        <property name="function" type="string">
+            <column name="function" length="50" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="100" />
+        </property>
+        <property name="compound" type="string">
+            <column name="compound" length="200" />
+        </property>
+        <property name="status" type="string">
+            <column name="status" length="100" />
+        </property>
+        <property name="id" type="string">
+            <column name="id" length="200" />
+        </property>
+        <property name="processingTime" type="java.lang.Integer">
+            <column name="processing_time" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 7, 2018 10:50:38 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojos.UserCompound" table="user_compound" catalog="sbvs" optimistic-lock="version">
+        <id name="compound" type="string">
+            <column name="compound" length="400" />
+            <generator class="assigned" />
+        </id>
+        <property name="email" type="string">
+            <column name="email" length="200" />
+        </property>
+        <property name="result" type="string">
+            <column name="result" length="100" />
+        </property>
+    </class>
+</hibernate-mapping>
