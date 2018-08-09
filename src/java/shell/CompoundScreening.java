@@ -24,7 +24,7 @@ import pojos.UserCompound;
  * @author user only
  */
 public class CompoundScreening {
-    public static final String command="/home/puspa/sbvs/sbvs.sh";
+    public static final String command="/var/lib/tomcat7/sbvs.sh";
     public static UserCompound execute(String compound, String email){
         // set log for start time
 //        DateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
@@ -97,7 +97,8 @@ public class CompoundScreening {
             String tempMol2fileName,
             String sporesMol2fileName){
         BashExecutor.executeCommand2(conversionCommandSporesMOL2,
-                tempMol2fileName,sporesMol2fileName);
+                tempMol2fileName,
+                sporesMol2fileName);
         
     }
 }

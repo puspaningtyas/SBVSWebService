@@ -131,12 +131,9 @@ public class UserCompoundResource {
             CompoundScreening.compoundConversionSMI2MOL2(fileOut,
                     directory + "/tm" + tgl + ".smi",
                     directory + "/tm" + tgl + ".mol2");
-//            CompoundScreening.compoundConversionSporesMOL2( 
-//                    "tm"+tgl+".smi", 
-//                    "tin"+tgl+".mol2");
             CompoundScreening.compoundConversionSporesMOL2versi2(
-                    "tm" + tgl + ".smi",
-                    "tin" + tgl + ".mol2");
+                    directory + "/tm" + tgl + ".mol2",
+                    directory + "/tin" + tgl + ".mol2");
 
             userCompound = CompoundScreening.execute(tempCompound.getCompound(),
                     tempCompound.getEmail());
